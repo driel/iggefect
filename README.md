@@ -1,1 +1,1 @@
-iggefet jQuery plugin for image effect
+iggeffect jQuery plugin for image effect
