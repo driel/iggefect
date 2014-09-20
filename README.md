@@ -1,14 +1,14 @@
 iggeffect jQuery plugin for image effect. currently support 10 effects
 
 <h3>usage</h3>
-&lt;img src="anything.jpg|png|gif|bmp" id="the_id" alt=""&gt;
 <pre>
+	&lt;img src="anything.jpg|png|gif|bmp" id="the_id" alt=""&gt;
 	$(function(){
 		$('#the_id').iggefect('original'); // could be original | grayscale | invert | noise | brightness | treshold | sepia | darken | sharpen | emboss | blur
 	});
 </pre>
 
-<h3>want to add watermark? here is the code</h3>
+<h3>want to add watermark?</h3>
 <pre>
 	$(window).on('load', function(){
 		$('#the_id').iggefect('PUT_DESIRED_EFFECT_HERE').addWaterMark('your watermark text', {
