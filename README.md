@@ -1,4 +1,16 @@
 iggeffect jQuery plugin for image effect. currently support 10 effects
+<ul>
+	<li>Grayscale</li>
+	<li>Invert</li>
+	<li>Noise</li>
+	<li>Brightness</li>
+	<li>Treshold</li>
+	<li>Sepia</li>
+	<li>Darken</li>
+	<li>Sharpen</li>
+	<li>Emboss</li>
+	<li>Blur</li>
+</ul>
 
 <h3>usage</h3>
 <pre>
