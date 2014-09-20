@@ -7,16 +7,101 @@
 	<script src="../iggefect.js"></script>
 	<script>
 		$(function(){
-			$('.iggefect').iggefect('emboss').addWaterMark('By Dariel untuk dunia', {
+			$('#original').iggefect().addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#grayscale').iggefect('grayscale').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#invert').iggefect('invert').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#noise').iggefect('noise').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#brightness').iggefect('brightness').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#treshold').iggefect('treshold').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#sepia').iggefect('sepia').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#blur').iggefect('blur').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#sharpen').iggefect('sharpen').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#emboss').iggefect('emboss').addWaterMark('By Dariel untuk dunia', {
+				color: 'blue', 
+				position: 'bottom-right'
+			});
+
+			$('#darken').iggefect('darken').addWaterMark('By Dariel untuk dunia', {
 				color: 'blue', 
 				position: 'bottom-right'
 			});
 		});
 	</script>
+	<style>
+	.imgwrap{padding: 10px; border: 1px solid #000; margin-bottom: 10px;}
+	</style>
 </head>
 <body>
-	<div id="imgwrap">
-		<img src="images/demo.png" class="iggefect" width="" alt="">
+	<div class="imgwrap">
+		<h1>no effect</h1>
+		<img src="images/dog21.png" id="original" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<h1>grayscale</h1>
+		<img src="images/dog21.png" id="grayscale" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="invert" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="noise" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="brightness" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="treshold" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="sepia" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="blur" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="sharpen" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="emboss" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<img src="images/dog21.png" id="darken" width="" alt="">
 	</div>
 </body>
 </html>

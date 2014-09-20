@@ -146,21 +146,15 @@
 					imgData.data[i+1] = (imgData.data[i] * 0.34) + (imgData.data[i+1] * 0.68) + (imgData.data[i+2] * 0.16);
 					imgData.data[i+2] = (imgData.data[i] * 0.27) + (imgData.data[i+1] * 0.53) + (imgData.data[i+2] * 0.13);
 				}
-			}
-			context.putImageData(imgData, 0, 0);
-		};
 
-		this._blur = function(context, img){
-			context.save();
-			context.globalAlpha = 0.35;
-			for(var i = 0; i < 4; i++){
-				for(var y = -1; y < 2; y++){
-					for(var x = -1; x < 2; x++){
-						context.drawImage(img, x, y);
-					}
+				if(effect == 'darken'){
+					var darkness = typeof value == 'undefined' ? _opt.defaultValue:value;
+					imgData.data[i] -= darkness;
+					imgData.data[i+1] -= darkness;
+					imgData.data[i+2] -= darkness;
 				}
 			}
-			context.restore();
+			context.putImageData(imgData, 0, 0);
 		};
 
 		this._convoluteEffect = function(context, img, effect){
@@ -182,6 +176,14 @@
 						1, 1, 1,
 	                	1, 0.7, -1,
 	               		-1, -1, -1
+               		];
+				break;
+
+				case 'blur':
+					matrix = [
+						1/9, 1/9, 1/9,
+	                	1/9, 1/9, 1/9,
+	               		1/9, 1/9, 1/9
                		];
 				break;
 			}
@@ -255,15 +257,13 @@
 				case 'brightness':
 				case 'treshold':
 				case 'sepia':
+				case 'darken':
 				self._effect(context, img, _effect, value);
-				break;
-
-				case 'blur':
-				self._blur(context, img);
 				break;
 
 				case 'sharpen':
 				case 'emboss':
+				case 'blur':
 				self._convoluteEffect(context, img, effect);
 				break;
 			}
