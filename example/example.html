@@ -6,7 +6,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../iggefect.js"></script>
 	<script>
-		$(function(){
+		$(window).on('load', function(){
 			$('#original').iggefect();
 			$('#grayscale').iggefect('grayscale');
 			$('#invert').iggefect('invert');
