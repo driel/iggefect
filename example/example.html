@@ -7,101 +7,80 @@
 	<script src="../iggefect.js"></script>
 	<script>
 		$(function(){
-			$('#original').iggefect().addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#grayscale').iggefect('grayscale').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#invert').iggefect('invert').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#noise').iggefect('noise').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#brightness').iggefect('brightness').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#treshold').iggefect('treshold').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#sepia').iggefect('sepia').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#blur').iggefect('blur').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#sharpen').iggefect('sharpen').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#emboss').iggefect('emboss').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
-			});
-
-			$('#darken').iggefect('darken').addWaterMark('By Dariel untuk dunia', {
-				color: 'blue', 
-				position: 'bottom-right'
+			$('#original').iggefect();
+			$('#grayscale').iggefect('grayscale');
+			$('#invert').iggefect('invert');
+			$('#noise').iggefect('noise');
+			$('#brightness').iggefect('brightness');
+			$('#treshold').iggefect('treshold');
+			$('#sepia').iggefect('sepia');
+			$('#blur').iggefect('blur');
+			$('#sharpen').iggefect('sharpen');
+			$('#emboss').iggefect('emboss');
+			$('#darken').iggefect('darken');
+			$('#original-with-watermark').iggefect().addWaterMark('By Dariel (dr.iel_pra@yahoo.co.id)', {
+				position: 'top-left'
 			});
 		});
 	</script>
 	<style>
-	.imgwrap{padding: 10px; border: 1px solid #000; margin-bottom: 10px;}
+	.imgwrap{float:left; padding: 10px; border: 1px solid #000; margin: 0 10px 10px 0;}
+	.imgwrap h1{margin: -10px; margin-bottom: 0; padding: 5px 20px; background: #ccc; font-size: 22px;}
+	.imgwrap h1>small{font-size:12px;}
 	</style>
 </head>
 <body>
 	<div class="imgwrap">
-		<h1>no effect</h1>
+		<h1>Original</h1>
+		<img src="images/dog21.png" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<h1>No effect</h1>
 		<img src="images/dog21.png" id="original" width="" alt="">
 	</div>
 	<div class="imgwrap">
-		<h1>grayscale</h1>
+		<h1>Grayscale</h1>
 		<img src="images/dog21.png" id="grayscale" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Invert</h1>
 		<img src="images/dog21.png" id="invert" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Noise</h1>
 		<img src="images/dog21.png" id="noise" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Brightness</h1>
 		<img src="images/dog21.png" id="brightness" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Treshold</h1>
 		<img src="images/dog21.png" id="treshold" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Sepia</h1>
 		<img src="images/dog21.png" id="sepia" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Blur</h1>
 		<img src="images/dog21.png" id="blur" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Sharpen</h1>
 		<img src="images/dog21.png" id="sharpen" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Emboss</h1>
 		<img src="images/dog21.png" id="emboss" width="" alt="">
 	</div>
 	<div class="imgwrap">
+		<h1>Darken</h1>
 		<img src="images/dog21.png" id="darken" width="" alt="">
+	</div>
+	<div class="imgwrap">
+		<h1>No effect (<small>+ watermark</small>)</h1>
+		<img src="images/dog21.png" id="original-with-watermark" width="" alt="">
 	</div>
 </body>
 </html>
