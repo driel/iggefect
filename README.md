@@ -12,6 +12,9 @@ iggeffect jQuery plugin for image effect. currently support 10 effects
 	<li>Blur</li>
 </ul>
 
+<h3>Demo</h3>
+<a href="http://dev.mangdariel.web.id/iggefect/example/example.html">here</a> you go
+
 <h3>usage</h3>
 <pre>
 	&lt;img src="anything.jpg|png|gif|bmp" id="the_id" alt=""&gt;
@@ -30,8 +33,6 @@ iggeffect jQuery plugin for image effect. currently support 10 effects
 	});
 </pre>
 
-<h3>Demo</h3>
-<a href="http://dev.mangdariel.web.id/iggefect/example/example.html">here</a> you go
 
 <h3>credit</h3>
 <a href="http://www.html5rocks.com/en/tutorials/canvas/imagefilters/">htmlrocks</a> - for convolute implementation
